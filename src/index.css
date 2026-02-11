@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+/* Boutique Agricultural Theme - Royal Orchard Imports */
+@theme {
+  /* Primary: Forest Green - growth, lush orchards */
+  --color-forest: #1b4d3e;
+  --color-forest-light: #2d6a5a;
+  --color-forest-dark: #0f3329;
+  /* Secondary: Deep Apple Red - premium product */
+  --color-apple: #8b2942;
+  --color-apple-light: #a83d5a;
+  --color-apple-muted: #c45c7a;
+  /* Accent: European Blue - import origin */
+  --color-european: #2c5282;
+  --color-european-light: #3b6ea5;
+  /* Background: Off-White / Cream */
+  --color-cream: #f8f6f1;
+  --color-cream-dark: #ebe8e0;
+  /* Neutrals */
+  --color-ink: #1a1a1a;
+  --color-ink-muted: #4a5568;
+}
+
+/* Serif for headings - sophisticated */
+@font-face {
+  font-family: 'Heading Serif';
+  src: local('Georgia'), local('Times New Roman');
+  font-weight: 400 700;
+}
+
+body {
+  font-family: 'Source Sans 3', system-ui, -apple-system, sans-serif;
+  background-color: var(--color-cream);
+  color: var(--color-ink);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.font-serif {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+}
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
