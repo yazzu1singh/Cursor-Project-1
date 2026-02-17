@@ -1,113 +1,105 @@
 import React from 'react';
 
 function App() {
-  // Your business details
-  const phoneNumber = "919876543210"; // Replace with your actual number (start with 91)
-  const emailAddress = "sales@royalorchard.in"; // Replace with your email
+  // --- Update these with your real details later ---
+  const phoneNumber = "919876543210"; 
+  const emailAddress = "sales@royalorchard.in"; 
 
   const products = [
     { 
       name: "Gala Series (Simmons/Buckeye)", 
-      desc: "Selected for high-color stability and early maturity. These clones produce a deep red blush even in warmer climates like the lower belts of HP.",
-      specs: ["Maturity: Early", "Color: 90-100% Red", "Storage: High Pressure"],
-      img: "/gala.jpg",
-      fallback: "https://images.unsplash.com/photo-1560806887-1e4cd0b6cbd6?w=800"
+      desc: "High-color stability and early maturity. Perfect for the lower belts of HP.",
+      specs: ["Maturity: Early", "Color: Deep Red", "Storage: High"],
+      img: "https://images.unsplash.com/photo-1560806887-1e4cd0b6cbd6?w=800"
     },
     { 
       name: "Red Delicious (Super Chief)", 
-      desc: "The industry standard for spur-type Red Delicious. Known for its crimson color and classic five-point shape, perfect for high-altitude orchards.",
-      specs: ["Type: Spur-type", "Fruit Size: Large", "Growth: Compact"],
-      img: "/red-delicious.jpg",
-      fallback: "https://images.unsplash.com/photo-1619546813926-a78fa6372cd2?w=800"
+      desc: "The industry standard for spur-type apples with a classic five-point shape.",
+      specs: ["Type: Spur-type", "Size: Large", "Growth: Compact"],
+      img: "https://images.unsplash.com/photo-1619546813926-a78fa6372cd2?w=800"
     },
     { 
       name: "Certified Apple Rootstocks", 
-      desc: "Certified M9 and MM106 rootstocks sourced from elite nurseries. The foundation for tree longevity and consistent yield in hilly terrains.",
-      specs: ["M9: Dwarfing", "MM106: Semi-vigorous", "Virus-free certified"],
-      img: "/root-stock.jpg",
-      fallback: "https://images.unsplash.com/photo-1500651230702-0e2d8a49d4ad?w=800"
+      desc: "Elite M9 and MM106 rootstocks for tree longevity and consistent yield.",
+      specs: ["M9: Dwarfing", "MM106: Semi-vigorous", "Certified Virus-free"],
+      img: "https://images.unsplash.com/photo-1500651230702-0e2d8a49d4ad?w=800"
     }
   ];
 
   return (
-    <div style={{ fontFamily: 'sans-serif', color: '#333', margin: 0, backgroundColor: '#ffffff', scrollBehavior: 'smooth' }}>
+    <div style={{ fontFamily: 'sans-serif', margin: 0, backgroundColor: '#fff', scrollBehavior: 'smooth' }}>
       
-      {/* FLOATING WHATSAPP BUTTON */}
+      {/* WHATSAPP FLOATING BUTTON */}
       <a 
-        href={`https://wa.me/${phoneNumber}?text=Hi Royal Orchard, I'm interested in your apple nursery stock.`}
+        href={"https://wa.me/" + phoneNumber} 
         target="_blank" 
-        rel="noopener noreferrer"
-        style={{
-          position: 'fixed',
-          bottom: '30px',
-          right: '30px',
-          backgroundColor: '#25D366',
-          color: 'white',
-          borderRadius: '50px',
-          padding: '12px 20px',
-          display: 'flex',
-          alignItems: 'center',
-          gap: '10px',
-          textDecoration: 'none',
-          fontWeight: 'bold',
-          boxShadow: '0 4px 15px rgba(0,0,0,0.2)',
-          zIndex: 1000,
-          fontSize: '1rem'
-        }}
+        rel="noreferrer" 
+        style={{ position: 'fixed', bottom: '20px', right: '20px', backgroundColor: '#25D366', color: '#fff', padding: '12px 20px', borderRadius: '50px', fontWeight: 'bold', textDecoration: 'none', zIndex: 1000, boxShadow: '0 4px 10px rgba(0,0,0,0.2)' }}
       >
-        <span>WhatsApp Us</span>
+        WhatsApp Us
       </a>
 
       {/* NAVIGATION */}
-      <nav style={{ display: 'flex', justifyContent: 'space-between', padding: '20px 5%', backgroundColor: '#fff', borderBottom: '2px solid #2d5a27', alignItems: 'center', position: 'sticky', top: 0, zIndex: 100 }}>
-        <div style={{ fontWeight: '800', color: '#2d5a27', fontSize: '1.5rem', letterSpacing: '1px' }}>
-          ROYAL ORCHARD IMPORTS LTD.
-        </div>
+      <nav style={{ padding: '20px 5%', borderBottom: '2px solid #2d5a27', display: 'flex', justifyContent: 'space-between', alignItems: 'center', position: 'sticky', top: 0, backgroundColor: '#fff', zIndex: 100 }}>
+        <div style={{ fontWeight: '900', color: '#2d5a27', fontSize: '1.2rem' }}>ROYAL ORCHARD IMPORTS LTD.</div>
         <div style={{ display: 'flex', gap: '20px' }}>
-          <a href="#home" style={{ textDecoration: 'none', color: '#333', fontWeight: 'bold' }}>Home</a>
           <a href="#about" style={{ textDecoration: 'none', color: '#333', fontWeight: 'bold' }}>About</a>
+          <a href="#catalogue" style={{ textDecoration: 'none', color: '#333', fontWeight: 'bold' }}>Catalogue</a>
           <a href="#contact" style={{ textDecoration: 'none', color: '#333', fontWeight: 'bold' }}>Contact</a>
         </div>
       </nav>
 
-      {/* HERO */}
-      <header id="home" style={{ padding: '120px 20px', textAlign: 'center', backgroundColor: '#2d5a27', color: 'white' }}>
-        <h1 style={{ fontSize: '4rem', marginBottom: '10px', textTransform: 'uppercase' }}>Royal Orchard Imports Ltd.</h1>
-        <p style={{ fontSize: '1.4rem' }}>Elite Apple Genetics for Himachal's Growers</p>
+      {/* HERO SECTION */}
+      <header style={{ padding: '100px 20px', textAlign: 'center', backgroundColor: '#2d5a27', color: '#fff' }}>
+        <h1 style={{ fontSize: '3rem', margin: 0, fontWeight: '900' }}>ROYAL ORCHARD IMPORTS LTD.</h1>
+        <p style={{ fontSize: '1.2rem', marginTop: '10px' }}>Elite Apple Genetics & Virus-Free Rootstocks</p>
       </header>
 
-      {/* ABOUT US */}
-      <section id="about" style={{ padding: '80px 10%', backgroundColor: '#f9fbf9', textAlign: 'center' }}>
-        <h2 style={{ fontSize: '2.5rem', color: '#1a3317' }}>Rooted in Excellence</h2>
-        <p style={{ maxWidth: '800px', margin: '20px auto', fontSize: '1.1rem', lineHeight: '1.8' }}>
-          Located in <strong>Rohru, Shimla</strong>, we bridge the gap between global innovation and traditional farming by sourcing world-class, virus-free plant material.
-        </p>
+      {/* ABOUT SECTION */}
+      <section id="about" style={{ padding: '80px 10%', textAlign: 'center', backgroundColor: '#f4f7f4' }}>
+        <h2 style={{ fontSize: '2.5rem', color: '#1a3317', marginBottom: '20px' }}>About Us</h2>
+        <div style={{ maxWidth: '800px', margin: '0 auto', lineHeight: '1.8', fontSize: '1.1rem', color: '#444' }}>
+          <p>Based in <strong>Rohru, Shimla</strong>, we provide high-quality, virus-free plant material and elite rootstocks to growers across Himachal Pradesh. We bring world-class genetics to the local farmers of the apple belt.</p>
+        </div>
+      </section>
+
+      {/* CATALOGUE SECTION */}
+      <section id="catalogue" style={{ padding: '80px 5%' }}>
+        <h2 style={{ textAlign: 'center', fontSize: '2.5rem', marginBottom: '40px' }}>Our Catalogue</h2>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '30px' }}>
+          {products.map((item, index) => (
+            <div key={index} style={{ border: '1px solid #eee', borderRadius: '15px', overflow: 'hidden', boxShadow: '0 5px 15px rgba(0,0,0,0.05)' }}>
+              <img src={item.img} alt={item.name} style={{ width: '100%', height: '250px', objectFit: 'cover' }} />
+              <div style={{ padding: '20px' }}>
+                <h3 style={{ color: '#2d5a27', margin: '0 0 10px 0' }}>{item.name}</h3>
+                <p style={{ fontSize: '0.9rem', color: '#666' }}>{item.desc}</p>
+                <ul style={{ fontSize: '0.85rem', color: '#333', paddingLeft: '20px' }}>
+                  {item.specs.map((s, i) => (
+                    <li key={i}>{s}</li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+          ))}
+        </div>
       </section>
 
       {/* FOOTER / CONTACT */}
-      <footer id="contact" style={{ padding: '80px 5%', backgroundColor: '#1a3317', color: 'white' }}>
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '40px' }}>
+      <footer id="contact" style={{ padding: '60px 5%', backgroundColor: '#1a3317', color: '#fff' }}>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '40px' }}>
           <div>
-            <h3 style={{ color: '#8bc34a', fontSize: '1.6rem', marginBottom: '15px' }}>Contact Details</h3>
-            <p style={{ margin: '10px 0', fontSize: '1.1rem' }}>
-              <strong>📞 Phone: </strong> 
-              <a href={`tel:${phoneNumber}`} style={{ color: 'white', textDecoration: 'none' }}>+{phoneNumber}</a>
-            </p>
-            <p style={{ margin: '10px 0', fontSize: '1.1rem' }}>
-              <strong>✉️ Email: </strong> 
-              <a href={`mailto:${emailAddress}`} style={{ color: 'white', textDecoration: 'none' }}>{emailAddress}</a>
-            </p>
+            <h3 style={{ color: '#8bc34a' }}>Contact Us</h3>
+            <p>📞 Phone: {phoneNumber}</p>
+            <p>✉️ Email: {emailAddress}</p>
           </div>
           <div>
-            <h4 style={{ color: '#8bc34a', marginBottom: '15px' }}>Visit Our Office</h4>
+            <h3 style={{ color: '#8bc34a' }}>Location</h3>
             <p>📍 Upper Rohru Bazar, Rohru</p>
             <p>Distt. Shimla, HP - 171207</p>
           </div>
         </div>
-        <div style={{ textAlign: 'center', marginTop: '50px', borderTop: '1px solid #333', paddingTop: '20px', fontSize: '0.9rem', opacity: 0.5 }}>
-          © 2026 Royal Orchard Imports Ltd.
-        </div>
       </footer>
+
     </div>
   );
 }
