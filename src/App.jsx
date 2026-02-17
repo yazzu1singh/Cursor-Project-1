@@ -1,6 +1,10 @@
 import React from 'react';
 
 function App() {
+  // Your business details
+  const phoneNumber = "919876543210"; // Replace with your actual number (start with 91)
+  const emailAddress = "sales@royalorchard.in"; // Replace with your email
+
   const products = [
     { 
       name: "Gala Series (Simmons/Buckeye)", 
@@ -28,74 +32,76 @@ function App() {
   return (
     <div style={{ fontFamily: 'sans-serif', color: '#333', margin: 0, backgroundColor: '#ffffff', scrollBehavior: 'smooth' }}>
       
-      {/* HEADER / NAVIGATION */}
+      {/* FLOATING WHATSAPP BUTTON */}
+      <a 
+        href={`https://wa.me/${phoneNumber}?text=Hi Royal Orchard, I'm interested in your apple nursery stock.`}
+        target="_blank" 
+        rel="noopener noreferrer"
+        style={{
+          position: 'fixed',
+          bottom: '30px',
+          right: '30px',
+          backgroundColor: '#25D366',
+          color: 'white',
+          borderRadius: '50px',
+          padding: '12px 20px',
+          display: 'flex',
+          alignItems: 'center',
+          gap: '10px',
+          textDecoration: 'none',
+          fontWeight: 'bold',
+          boxShadow: '0 4px 15px rgba(0,0,0,0.2)',
+          zIndex: 1000,
+          fontSize: '1rem'
+        }}
+      >
+        <span>WhatsApp Us</span>
+      </a>
+
+      {/* NAVIGATION */}
       <nav style={{ display: 'flex', justifyContent: 'space-between', padding: '20px 5%', backgroundColor: '#fff', borderBottom: '2px solid #2d5a27', alignItems: 'center', position: 'sticky', top: 0, zIndex: 100 }}>
         <div style={{ fontWeight: '800', color: '#2d5a27', fontSize: '1.5rem', letterSpacing: '1px' }}>
           ROYAL ORCHARD IMPORTS LTD.
         </div>
         <div style={{ display: 'flex', gap: '20px' }}>
           <a href="#home" style={{ textDecoration: 'none', color: '#333', fontWeight: 'bold' }}>Home</a>
-          <a href="#about" style={{ textDecoration: 'none', color: '#333', fontWeight: 'bold' }}>About Us</a>
-          <a href="#products" style={{ textDecoration: 'none', color: '#333', fontWeight: 'bold' }}>Catalogue</a>
+          <a href="#about" style={{ textDecoration: 'none', color: '#333', fontWeight: 'bold' }}>About</a>
           <a href="#contact" style={{ textDecoration: 'none', color: '#333', fontWeight: 'bold' }}>Contact</a>
         </div>
       </nav>
 
-      {/* HERO SECTION */}
+      {/* HERO */}
       <header id="home" style={{ padding: '120px 20px', textAlign: 'center', backgroundColor: '#2d5a27', color: 'white' }}>
-        <h1 style={{ fontSize: '4rem', marginBottom: '10px', textTransform: 'uppercase' }}>
-          Royal Orchard Imports Ltd.
-        </h1>
-        <p style={{ fontSize: '1.4rem', fontWeight: '300' }}>
-          Premium Nursery Stock for the Orchards of Himachal Pradesh
-        </p>
+        <h1 style={{ fontSize: '4rem', marginBottom: '10px', textTransform: 'uppercase' }}>Royal Orchard Imports Ltd.</h1>
+        <p style={{ fontSize: '1.4rem' }}>Elite Apple Genetics for Himachal's Growers</p>
       </header>
 
-      {/* NEW: ABOUT US SECTION */}
-      <section id="about" style={{ padding: '80px 10%', backgroundColor: '#f9fbf9' }}>
-        <div style={{ maxWidth: '900px', margin: '0 auto', textAlign: 'center' }}>
-          <h2 style={{ fontSize: '2.5rem', color: '#1a3317', marginBottom: '30px' }}>Rooted in Excellence</h2>
-          <p style={{ fontSize: '1.1rem', lineHeight: '1.8', color: '#555', marginBottom: '20px' }}>
-            Located in the heart of the apple belt in <strong>Rohru, Shimla</strong>, Royal Orchard Imports Ltd. is dedicated to transforming the horticultural landscape of Himachal Pradesh. We specialize in sourcing the world's finest apple genetics directly from elite European breeders.
-          </p>
-          <p style={{ fontSize: '1.1rem', lineHeight: '1.8', color: '#555' }}>
-            Our mission is simple: to provide local growers with high-yield, virus-free, and climate-resilient nursery stock. By bridging the gap between global innovation and traditional farming, we ensure that every orchard we help plant is built on a foundation of quality and longevity.
-          </p>
-        </div>
-      </section>
-
-      {/* PRODUCTS SECTION */}
-      <section id="products" style={{ padding: '80px 5%', display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '30px' }}>
-        {products.map((item, index) => (
-          <div key={index} style={{ border: '1px solid #eee', borderRadius: '15px', overflow: 'hidden', backgroundColor: '#fff', boxShadow: '0 8px 20px rgba(0,0,0,0.1)' }}>
-            <img 
-              src={item.img} 
-              alt={item.name} 
-              style={{ width: '100%', height: '250px', objectFit: 'cover' }}
-              onError={(e) => { e.target.src = item.fallback; }} 
-            />
-            <div style={{ padding: '25px' }}>
-              <h3 style={{ color: '#2d5a27', marginTop: 0, fontSize: '1.5rem' }}>{item.name}</h3>
-              <p style={{ fontSize: '1rem', color: '#666', lineHeight: '1.6' }}>{item.desc}</p>
-              <ul style={{ fontSize: '0.9rem', color: '#444', paddingLeft: '20px', marginTop: '15px' }}>
-                {item.specs.map((s, i) => <li key={i} style={{ marginBottom: '5px' }}>{s}</li>)}
-              </ul>
-            </div>
-          </div>
-        ))}
+      {/* ABOUT US */}
+      <section id="about" style={{ padding: '80px 10%', backgroundColor: '#f9fbf9', textAlign: 'center' }}>
+        <h2 style={{ fontSize: '2.5rem', color: '#1a3317' }}>Rooted in Excellence</h2>
+        <p style={{ maxWidth: '800px', margin: '20px auto', fontSize: '1.1rem', lineHeight: '1.8' }}>
+          Located in <strong>Rohru, Shimla</strong>, we bridge the gap between global innovation and traditional farming by sourcing world-class, virus-free plant material.
+        </p>
       </section>
 
       {/* FOOTER / CONTACT */}
       <footer id="contact" style={{ padding: '80px 5%', backgroundColor: '#1a3317', color: 'white' }}>
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '40px' }}>
           <div>
-            <h3 style={{ color: '#8bc34a', fontSize: '1.6rem', margin: '0 0 15px 0' }}>Royal Orchard Imports Ltd.</h3>
-            <p style={{ fontSize: '1rem', opacity: 0.8 }}>Serving the farming community of Rohru and Shimla with elite genetics.</p>
+            <h3 style={{ color: '#8bc34a', fontSize: '1.6rem', marginBottom: '15px' }}>Contact Details</h3>
+            <p style={{ margin: '10px 0', fontSize: '1.1rem' }}>
+              <strong>📞 Phone: </strong> 
+              <a href={`tel:${phoneNumber}`} style={{ color: 'white', textDecoration: 'none' }}>+{phoneNumber}</a>
+            </p>
+            <p style={{ margin: '10px 0', fontSize: '1.1rem' }}>
+              <strong>✉️ Email: </strong> 
+              <a href={`mailto:${emailAddress}`} style={{ color: 'white', textDecoration: 'none' }}>{emailAddress}</a>
+            </p>
           </div>
           <div>
-            <h4 style={{ color: '#8bc34a', margin: '0 0 15px 0' }}>Visit Our Office</h4>
-            <p style={{ margin: '8px 0', fontSize: '1.1rem' }}>📍 Upper Rohru Bazar, Rohru</p>
-            <p style={{ margin: '8px 0', fontSize: '1.1rem' }}>Distt. Shimla, HP - 171207</p>
+            <h4 style={{ color: '#8bc34a', marginBottom: '15px' }}>Visit Our Office</h4>
+            <p>📍 Upper Rohru Bazar, Rohru</p>
+            <p>Distt. Shimla, HP - 171207</p>
           </div>
         </div>
         <div style={{ textAlign: 'center', marginTop: '50px', borderTop: '1px solid #333', paddingTop: '20px', fontSize: '0.9rem', opacity: 0.5 }}>
