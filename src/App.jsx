@@ -5,7 +5,7 @@ function App() {
   const emailAddress = "sales@royalorchard.in"; 
 
   const team = [
-    { name: "Chetan Sood", role: "Director Logistics & India Operations", img: "/chetan.jpg" },
+    { name: "Chetan Sood", role: "Director Logistics & India Operations", img: "/chetan-new.jpg" },
     { name: "Lalit Thakur", role: "Director Sales", img: "/lalit.jpg" },
     { name: "Gulshan Kalta", role: "Director Sales", img: "/gulshan.jpg" },
     { name: "Yajuvinder Singh", role: "Director Marketing & EU Partnerships", img: "/yajuvinder.jpg" }
