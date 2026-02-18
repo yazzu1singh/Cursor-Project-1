@@ -4,10 +4,11 @@ function App() {
   const phoneNumber = "919876543210"; 
   const emailAddress = "sales@royalorchard.in"; 
 
+  // --- UPDATED NAME: GULSHAN KALTA ---
   const team = [
     { name: "Chetan Sood", role: "Director Logistics & India Operations" },
     { name: "Lalit Thakur", role: "Director Sales" },
-    { name: "Kulbhushan Kalta", role: "Director Sales" },
+    { name: "Gulshan Kalta", role: "Director Sales" },
     { name: "Yajuvinder Singh", role: "Director Marketing & EU Partnerships" }
   ];
 
