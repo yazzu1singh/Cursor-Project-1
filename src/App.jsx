@@ -26,7 +26,7 @@ function App() {
     { 
       name: "Certified Apple Rootstocks", 
       desc: "Elite M9 and MM106 rootstocks for tree longevity and consistent yield.",
-      img: "https://images.unsplash.com/photo-1500651230702-0e2d8a49d4ad?w=800"
+      img: "/rootstock.jpg"
     }
   ];
 
