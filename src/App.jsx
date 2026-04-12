@@ -1,36 +1,16 @@
 import React from 'react';
 
 function App() {
-  const phoneNumber = "919876543210"; 
-  const emailAddress = "sales@royalorchard.in"; 
+  const phoneNumber = "919218598160";
+  const emailAddress = "info@applewayimports.com";
 
   const team = [
-    { name: "Chetan Sood", role: "Director Logistics & India Operations", img: "/chetan-new.jpg" },
-    { name: "Lalit Thakur", role: "Director Sales", img: "/lalit.jpg" },
-    { name: "Gulshan Kalta", role: "Director Sales", img: "/gulshan.jpg" },
-    { name: "Yajuvinder Singh", role: "Director Marketing & EU Partnerships", img: "/yajuvinder.jpg" }
+    { name: "Chetan Sood", role: "Director — Logistics & India Operations", img: "/chetan-new.jpg" },
+    { name: "Lalit Thakur", role: "Director — Sales", img: "/lalit.jpg" },
+    { name: "Gulshan Kalta", role: "Director — Sales", img: "/gulshan.jpg" },
+    { name: "Yajuvinder Singh", role: "Director — Marketing & EU Partnerships", img: "/yajuvinder.jpg" }
   ];
 
-  // These are your product descriptions restored to full length
-  const products = [
-    { 
-      name: "Gala Series (Simmons/Buckeye)", 
-      desc: "The Gala series represents the pinnacle of modern apple farming. Varieties like Simmons and Buckeye are celebrated for their exceptional high-color stability and early maturity. These apples develop a deep, attractive red blush even in the lower belts of Himachal Pradesh, ensuring growers get premium market rates. They offer a perfect balance of sweetness and crunch with an excellent shelf life.",
-      img: "/gala.jpg" 
-    },
-    { 
-      name: "Red Delicious (Super Chief)", 
-      desc: "Super Chief is the industry standard for spur-type Red Delicious apples. It is highly prized for its classic five-point shape and intense, uniform red finish. This variety is specifically selected for its ability to color early and maintain its firmness. It is ideal for high-density plantations where consistent fruit size and superior color are the primary goals for commercial success.",
-      img: "/red-delicious.jpg.jpg" 
-    },
-    { 
-      name: "Certified Apple Rootstocks", 
-      desc: "Our elite M9 and MM106 rootstocks are the foundation of a productive orchard. These virus-free, certified rootstocks are imported to ensure tree longevity and consistent yield. M9 is perfect for high-density planting, encouraging early fruiting, while MM106 provides excellent anchorage and vigor for various soil types. We ensure our rootstocks are hardened and ready for the unique climate of the Himalayas.",
-      img: "/rootstock.jpg" 
-    }
-  ];
-
-  // Gallery placeholders - replace URLs with your local photos if you have them
   const galleryImages = [
     { url: "https://images.unsplash.com/photo-1567306226416-28f0efdc88ce?w=800", alt: "Orchard" },
     { url: "https://images.unsplash.com/photo-1594755335927-975000459db9?w=800", alt: "Apples" },
@@ -38,75 +18,231 @@ function App() {
     { url: "https://images.unsplash.com/photo-1615485290382-441e4d019cb0?w=800", alt: "Packing" }
   ];
 
+  const products = [
+    {
+      name: "Gala Series (Simmons / Buckeye / T-Rex)",
+      desc: "The Gala series represents the pinnacle of modern apple farming. Varieties like Simmons, Buckeye and the new CIV-exclusive T-Rex are celebrated for their exceptional high-colour stability and early maturity. These apples develop a deep, attractive full-red blush even at the high altitudes of Himachal Pradesh (5,500–7,500 ft), ensuring growers achieve premium market rates. They offer a perfect balance of sweetness and crunch with excellent shelf life.",
+      img: "/gala.jpg"
+    },
+    {
+      name: "Red Delicious (Super Chief)",
+      desc: "Super Chief is the industry standard for spur-type Red Delicious apples. It is highly prized for its classic five-point shape and intense, uniform red finish. This variety is specifically selected for its ability to colour early and maintain firmness. Ideal for high-density plantations where consistent fruit size and superior colour are the primary goals for commercial success.",
+      img: "/red-delicious.jpg"
+    },
+    {
+      name: "Certified Apple Rootstocks",
+      desc: "Our elite M9 and MM106 rootstocks are the foundation of a productive orchard. These virus-free, certified rootstocks are imported to ensure tree longevity and consistent yield. M9 is perfect for high-density planting and encourages early fruiting, while MM106 provides excellent anchorage and vigour for various soil types. All rootstocks are hardened and ready for the unique climate of the Himalayas.",
+      img: "/rootstock.jpg"
+    }
+  ];
+
   return (
-    <div style={{ fontFamily: 'sans-serif', margin: 0, backgroundColor: '#fff', scrollBehavior: 'smooth' }}>
-      
+    <div style={{ fontFamily: 'Georgia, serif', margin: 0, backgroundColor: '#fff', scrollBehavior: 'smooth' }}>
+
       {/* WHATSAPP BUTTON */}
-      <a href={"https://wa.me/" + phoneNumber} target="_blank" rel="noreferrer" style={{ position: 'fixed', bottom: '20px', right: '20px', backgroundColor: '#25D366', color: '#fff', padding: '15px 25px', borderRadius: '50px', fontWeight: 'bold', textDecoration: 'none', zIndex: 1000, boxShadow: '0 4px 15px rgba(0,0,0,0.3)', fontSize: '1.1rem' }}>
-        WhatsApp Us
+      <a
+        href={"https://wa.me/" + phoneNumber}
+        target="_blank"
+        rel="noreferrer"
+        style={{
+          position: 'fixed', bottom: '24px', right: '24px',
+          backgroundColor: '#25D366', color: '#fff',
+          padding: '14px 22px', borderRadius: '50px',
+          fontWeight: 'bold', textDecoration: 'none',
+          zIndex: 1000, boxShadow: '0 4px 20px rgba(0,0,0,0.25)',
+          fontSize: '1rem', letterSpacing: '0.5px'
+        }}>
+        💬 WhatsApp Us
       </a>
 
       {/* NAVIGATION */}
-      <nav style={{ padding: '25px 5%', borderBottom: '3px solid #2d5a27', display: 'flex', justifyContent: 'space-between', alignItems: 'center', position: 'sticky', top: 0, backgroundColor: '#fff', zIndex: 100 }}>
-        <div style={{ fontWeight: '900', color: '#2d5a27', fontSize: '1.6rem', letterSpacing: '1px' }}>ROYAL ORCHARD IMPORTS LTD.</div>
-        <div style={{ display: 'flex', gap: '30px' }}>
-          <a href="#about" style={{ textDecoration: 'none', color: '#333', fontWeight: 'bold', fontSize: '1.2rem' }}>About</a>
-          <a href="#gallery" style={{ textDecoration: 'none', color: '#333', fontWeight: 'bold', fontSize: '1.2rem' }}>Gallery</a>
-          <a href="#catalogue" style={{ textDecoration: 'none', color: '#333', fontWeight: 'bold', fontSize: '1.2rem' }}>Catalogue</a>
-          <a href="#contact" style={{ textDecoration: 'none', color: '#333', fontWeight: 'bold', fontSize: '1.2rem' }}>Contact</a>
+      <nav style={{
+        padding: '20px 6%', borderBottom: '2px solid #1a4d2e',
+        display: 'flex', justifyContent: 'space-between', alignItems: 'center',
+        position: 'sticky', top: 0, backgroundColor: '#fff', zIndex: 100,
+        boxShadow: '0 2px 12px rgba(0,0,0,0.07)'
+      }}>
+        <div style={{ display: 'flex', flexDirection: 'column' }}>
+          <span style={{ fontWeight: '900', color: '#1a4d2e', fontSize: '1.5rem', letterSpacing: '2px', textTransform: 'uppercase' }}>
+            AppleWay Imports
+          </span>
+          <span style={{ fontSize: '0.75rem', color: '#888', letterSpacing: '1.5px', textTransform: 'uppercase' }}>
+            Pvt. Ltd.
+          </span>
+        </div>
+        <div style={{ display: 'flex', gap: '32px' }}>
+          {['About', 'Gallery', 'Catalogue', 'Contact'].map(link => (
+            <a key={link} href={`#${link.toLowerCase()}`} style={{
+              textDecoration: 'none', color: '#1a4d2e',
+              fontWeight: '600', fontSize: '1rem', letterSpacing: '0.5px',
+              borderBottom: '2px solid transparent',
+              transition: 'border-color 0.2s'
+            }}
+              onMouseEnter={e => e.target.style.borderBottomColor = '#1a4d2e'}
+              onMouseLeave={e => e.target.style.borderBottomColor = 'transparent'}
+            >{link}</a>
+          ))}
         </div>
       </nav>
 
       {/* HERO SECTION */}
-      <header style={{ padding: '120px 20px', textAlign: 'center', backgroundColor: '#2d5a27', color: '#fff' }}>
-        <h1 style={{ fontSize: '4.5rem', margin: 0, fontWeight: '900', textTransform: 'uppercase' }}>ROYAL ORCHARD IMPORTS LTD.</h1>
-        <p style={{ fontSize: '1.8rem', marginTop: '15px', opacity: 0.9 }}>Elite Apple Genetics & Virus-Free Rootstocks</p>
+      <header style={{
+        padding: '130px 20px', textAlign: 'center',
+        background: 'linear-gradient(135deg, #1a4d2e 0%, #2d7a47 60%, #1a4d2e 100%)',
+        color: '#fff', position: 'relative', overflow: 'hidden'
+      }}>
+        <div style={{
+          position: 'absolute', top: 0, left: 0, right: 0, bottom: 0,
+          backgroundImage: 'radial-gradient(circle at 20% 50%, rgba(255,255,255,0.05) 0%, transparent 50%), radial-gradient(circle at 80% 20%, rgba(255,255,255,0.05) 0%, transparent 40%)',
+          pointerEvents: 'none'
+        }} />
+        <div style={{ fontSize: '3rem', marginBottom: '10px' }}>🍎</div>
+        <h1 style={{
+          fontSize: '3.8rem', margin: '0 0 10px 0',
+          fontWeight: '900', letterSpacing: '3px', textTransform: 'uppercase'
+        }}>
+          AppleWay Imports Pvt. Ltd.
+        </h1>
+        <p style={{ fontSize: '1.4rem', marginTop: '16px', opacity: 0.85, letterSpacing: '1px' }}>
+          Elite Apple Genetics &amp; Virus-Free Rootstocks from Europe
+        </p>
+        <p style={{ fontSize: '1rem', marginTop: '10px', opacity: 0.65, letterSpacing: '1px' }}>
+          Himachal Pradesh · India · Est. 2024
+        </p>
+        <div style={{ marginTop: '40px', display: 'flex', justifyContent: 'center', gap: '16px', flexWrap: 'wrap' }}>
+          <a href="#catalogue" style={{
+            backgroundColor: '#fff', color: '#1a4d2e',
+            padding: '14px 32px', borderRadius: '4px',
+            fontWeight: '700', textDecoration: 'none', fontSize: '1rem', letterSpacing: '0.5px'
+          }}>View Catalogue</a>
+          <a href="#contact" style={{
+            backgroundColor: 'transparent', color: '#fff',
+            padding: '14px 32px', borderRadius: '4px', border: '2px solid rgba(255,255,255,0.6)',
+            fontWeight: '700', textDecoration: 'none', fontSize: '1rem', letterSpacing: '0.5px'
+          }}>Get in Touch</a>
+        </div>
       </header>
 
-      {/* ABOUT US & TEAM SECTION */}
-      <section id="about" style={{ padding: '100px 10%', backgroundColor: '#f4f7f4' }}>
-        <h2 style={{ fontSize: '3.5rem', color: '#1a3317', textAlign: 'center', marginBottom: '40px' }}>About Us</h2>
-        <div style={{ maxWidth: '1000px', margin: '0 auto' }}>
-          <p style={{ lineHeight: '1.9', fontSize: '1.4rem', color: '#333', marginBottom: '25px', textAlign: 'justify' }}>
-            Royal Orchard Imports Ltd. is a premier horticultural company based in <strong>Rohru, Shimla</strong>. We are dedicated to revolutionizing apple farming in India by providing access to world-class, virus-free plant material. Our expertise lies in identifying and importing elite apple genetics that are specifically suited for the diverse micro-climates of the Himalayan region.
+      {/* ABOUT US SECTION */}
+      <section id="about" style={{ padding: '100px 10%', backgroundColor: '#f7f9f7' }}>
+        <h2 style={{ fontSize: '3rem', color: '#1a4d2e', textAlign: 'center', marginBottom: '50px', letterSpacing: '1px' }}>
+          About Us
+        </h2>
+
+        {/* Key Facts Strip */}
+        <div style={{
+          display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(180px, 1fr))',
+          gap: '20px', maxWidth: '900px', margin: '0 auto 60px auto'
+        }}>
+          {[
+            { stat: '5,500–7,500 ft', label: 'Planting Altitude' },
+            { stat: 'Italy', label: 'Source Country' },
+            { stat: 'PEQ Certified', label: 'Quarantine Compliant' },
+            { stat: 'HP & PAN India', label: 'Distribution' }
+          ].map((item, i) => (
+            <div key={i} style={{
+              backgroundColor: '#fff', padding: '28px 20px', borderRadius: '12px',
+              textAlign: 'center', boxShadow: '0 4px 12px rgba(0,0,0,0.06)',
+              borderTop: '4px solid #1a4d2e'
+            }}>
+              <div style={{ fontSize: '1.6rem', fontWeight: '900', color: '#1a4d2e' }}>{item.stat}</div>
+              <div style={{ fontSize: '0.85rem', color: '#777', marginTop: '6px', letterSpacing: '0.5px', textTransform: 'uppercase' }}>{item.label}</div>
+            </div>
+          ))}
+        </div>
+
+        <div style={{ maxWidth: '900px', margin: '0 auto' }}>
+          <p style={{ lineHeight: '1.9', fontSize: '1.25rem', color: '#333', marginBottom: '24px', textAlign: 'justify' }}>
+            <strong>AppleWay Imports Pvt. Ltd.</strong> is a premier horticultural import and nursery company headquartered in <strong>Mohali, Punjab</strong>, with deep operational roots in the apple-growing heartland of <strong>Rohru, District Shimla, Himachal Pradesh</strong>. We are dedicated to revolutionising apple farming in India by providing access to world-class, virus-free, certified plant material from leading European nurseries.
+          </p>
+          <p style={{ lineHeight: '1.9', fontSize: '1.25rem', color: '#333', marginBottom: '24px', textAlign: 'justify' }}>
+            Our expertise lies in identifying and importing elite apple genetics — including the latest dark Gala clones and high-performance rootstocks — that are specifically suited to the diverse micro-climates of the Himalayan region at altitudes between 5,500 and 7,500 feet above sea level. All imported material is handled through a fully compliant <strong>Post Entry Quarantine (PEQ)</strong> process under the supervision of the Government of India (PPQS) and the Designated Inspection Authority.
+          </p>
+          <p style={{ lineHeight: '1.9', fontSize: '1.25rem', color: '#333', textAlign: 'justify' }}>
+            Following successful PEQ clearance, certified mother plants are propagated through our licensed nursery and made available to commercial apple growers and orchardists across Himachal Pradesh — bringing the best of European apple science to Indian soil.
           </p>
         </div>
 
-        {/* TEAM LEADERSHIP */}
-        <h3 style={{ fontSize: '2.8rem', color: '#1a3317', textAlign: 'center', marginTop: '80px', marginBottom: '50px' }}>Meet Our Leadership</h3>
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: '30px', maxWidth: '1200px', margin: '0 auto' }}>
+        {/* TEAM */}
+        <h3 style={{
+          fontSize: '2.4rem', color: '#1a4d2e', textAlign: 'center',
+          marginTop: '90px', marginBottom: '50px', letterSpacing: '1px'
+        }}>
+          Our Leadership
+        </h3>
+        <div style={{
+          display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))',
+          gap: '28px', maxWidth: '1100px', margin: '0 auto'
+        }}>
           {team.map((person, index) => (
-            <div key={index} style={{ backgroundColor: '#fff', padding: '35px', borderRadius: '15px', boxShadow: '0 6px 18px rgba(0,0,0,0.08)', borderBottom: '6px solid #2d5a27', textAlign: 'center' }}>
-              <img src={person.img} alt={person.name} style={{ width: '150px', height: '150px', borderRadius: '50%', objectFit: 'cover', display: 'block', margin: '0 auto 20px auto', border: '3px solid #2d5a27' }} />
-              <h4 style={{ margin: '0', color: '#2d5a27', fontSize: '1.5rem' }}>{person.name}</h4>
-              <p style={{ margin: '10px 0 0', color: '#555', fontSize: '1.1rem', fontWeight: '600' }}>{person.role}</p>
+            <div key={index} style={{
+              backgroundColor: '#fff', padding: '36px 24px',
+              borderRadius: '16px', boxShadow: '0 6px 20px rgba(0,0,0,0.08)',
+              borderBottom: '5px solid #1a4d2e', textAlign: 'center'
+            }}>
+              <img
+                src={person.img}
+                alt={person.name}
+                style={{
+                  width: '130px', height: '130px', borderRadius: '50%',
+                  objectFit: 'cover', display: 'block', margin: '0 auto 20px auto',
+                  border: '4px solid #1a4d2e'
+                }}
+              />
+              <h4 style={{ margin: '0', color: '#1a4d2e', fontSize: '1.3rem', fontWeight: '700' }}>{person.name}</h4>
+              <p style={{ margin: '10px 0 0', color: '#666', fontSize: '0.95rem', fontWeight: '600', lineHeight: '1.4' }}>{person.role}</p>
             </div>
           ))}
         </div>
       </section>
 
-      {/* GALLERY SECTION (NEW) */}
+      {/* GALLERY SECTION */}
       <section id="gallery" style={{ padding: '100px 5%', backgroundColor: '#fff' }}>
-        <h2 style={{ textAlign: 'center', fontSize: '3.5rem', marginBottom: '60px', color: '#1a3317' }}>Orchard Gallery</h2>
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '20px', maxWidth: '1200px', margin: '0 auto' }}>
+        <h2 style={{ textAlign: 'center', fontSize: '3rem', marginBottom: '60px', color: '#1a4d2e', letterSpacing: '1px' }}>
+          Orchard Gallery
+        </h2>
+        <div style={{
+          display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
+          gap: '20px', maxWidth: '1200px', margin: '0 auto'
+        }}>
           {galleryImages.map((image, index) => (
-            <div key={index} style={{ overflow: 'hidden', borderRadius: '15px', height: '280px', boxShadow: '0 4px 10px rgba(0,0,0,0.1)' }}>
-              <img src={image.url} alt={image.alt} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+            <div key={index} style={{
+              overflow: 'hidden', borderRadius: '12px',
+              height: '280px', boxShadow: '0 6px 18px rgba(0,0,0,0.12)'
+            }}>
+              <img src={image.url} alt={image.alt} style={{ width: '100%', height: '100%', objectFit: 'cover', transition: 'transform 0.4s ease' }}
+                onMouseEnter={e => e.target.style.transform = 'scale(1.05)'}
+                onMouseLeave={e => e.target.style.transform = 'scale(1)'}
+              />
             </div>
           ))}
         </div>
       </section>
 
       {/* CATALOGUE SECTION */}
-      <section id="catalogue" style={{ padding: '100px 5%', backgroundColor: '#f4f7f4' }}>
-        <h2 style={{ textAlign: 'center', fontSize: '3.5rem', marginBottom: '60px', color: '#1a3317' }}>Our Catalogue</h2>
+      <section id="catalogue" style={{ padding: '100px 5%', backgroundColor: '#f7f9f7' }}>
+        <h2 style={{ textAlign: 'center', fontSize: '3rem', marginBottom: '16px', color: '#1a4d2e', letterSpacing: '1px' }}>
+          Our Catalogue
+        </h2>
+        <p style={{ textAlign: 'center', color: '#777', fontSize: '1.1rem', marginBottom: '60px' }}>
+          All varieties are virus-indexed, certified, and imported from leading European nurseries
+        </p>
         <div style={{ display: 'grid', gridTemplateColumns: '1fr', gap: '50px', maxWidth: '1100px', margin: '0 auto' }}>
           {products.map((item, index) => (
-            <div key={index} style={{ display: 'flex', flexDirection: index % 2 === 0 ? 'row' : 'row-reverse', border: '1px solid #eee', borderRadius: '25px', overflow: 'hidden', boxShadow: '0 10px 30px rgba(0,0,0,0.1)', flexWrap: 'wrap', backgroundColor: '#fff' }}>
-              <img src={item.img} alt={item.name} style={{ width: '450px', height: '400px', objectFit: 'cover', flexShrink: 0 }} />
-              <div style={{ padding: '40px', display: 'flex', flexDirection: 'column', justifyContent: 'center', flex: 1, minWidth: '300px' }}>
-                <h3 style={{ color: '#2d5a27', margin: '0 0 20px 0', fontSize: '2.2rem' }}>{item.name}</h3>
-                <p style={{ fontSize: '1.3rem', color: '#444', lineHeight: '1.7' }}>{item.desc}</p>
+            <div key={index} style={{
+              display: 'flex',
+              flexDirection: index % 2 === 0 ? 'row' : 'row-reverse',
+              border: '1px solid #e8ede8', borderRadius: '20px',
+              overflow: 'hidden', boxShadow: '0 10px 30px rgba(0,0,0,0.08)',
+              flexWrap: 'wrap', backgroundColor: '#fff'
+            }}>
+              <img src={item.img} alt={item.name} style={{ width: '420px', height: '380px', objectFit: 'cover', flexShrink: 0 }} />
+              <div style={{ padding: '44px', display: 'flex', flexDirection: 'column', justifyContent: 'center', flex: 1, minWidth: '280px' }}>
+                <div style={{ fontSize: '0.75rem', color: '#1a4d2e', fontWeight: '700', letterSpacing: '2px', textTransform: 'uppercase', marginBottom: '12px' }}>
+                  AppleWay Select
+                </div>
+                <h3 style={{ color: '#1a4d2e', margin: '0 0 20px 0', fontSize: '1.9rem', fontWeight: '800' }}>{item.name}</h3>
+                <p style={{ fontSize: '1.15rem', color: '#444', lineHeight: '1.8', margin: 0 }}>{item.desc}</p>
               </div>
             </div>
           ))}
@@ -114,18 +250,54 @@ function App() {
       </section>
 
       {/* CONTACT FOOTER */}
-      <footer id="contact" style={{ padding: '80px 5%', backgroundColor: '#1a3317', color: '#fff' }}>
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '50px', maxWidth: '1200px', margin: '0 auto' }}>
+      <footer id="contact" style={{ padding: '90px 5%', backgroundColor: '#1a4d2e', color: '#fff' }}>
+        <div style={{
+          display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
+          gap: '50px', maxWidth: '1100px', margin: '0 auto'
+        }}>
           <div>
-            <h3 style={{ color: '#8bc34a', fontSize: '2.2rem', marginBottom: '20px' }}>Contact Us</h3>
-            <p style={{ fontSize: '1.4rem', margin: '15px 0' }}><strong>Phone:</strong> {phoneNumber}</p>
-            <p style={{ fontSize: '1.4rem', margin: '15px 0' }}><strong>Email:</strong> {emailAddress}</p>
+            <div style={{ fontWeight: '900', fontSize: '1.6rem', letterSpacing: '2px', marginBottom: '6px' }}>APPLEWAY IMPORTS</div>
+            <div style={{ color: 'rgba(255,255,255,0.5)', fontSize: '0.8rem', letterSpacing: '2px', marginBottom: '30px' }}>PVT. LTD.</div>
+            <h3 style={{ color: '#7ecb8f', fontSize: '1.2rem', marginBottom: '16px', letterSpacing: '1px', textTransform: 'uppercase' }}>Contact Us</h3>
+            <p style={{ fontSize: '1.1rem', margin: '10px 0', color: 'rgba(255,255,255,0.85)' }}>
+              📞 <a href="tel:+358403772832" style={{ color: 'inherit', textDecoration: 'none' }}>+358-403 772 832 (Finland)</a>
+            </p>
+            <p style={{ fontSize: '1.1rem', margin: '10px 0', color: 'rgba(255,255,255,0.85)' }}>
+              📞 <a href="tel:+919218598160" style={{ color: 'inherit', textDecoration: 'none' }}>+91-92185 98160 (India)</a>
+            </p>
+            <p style={{ fontSize: '1.1rem', margin: '10px 0', color: 'rgba(255,255,255,0.85)' }}>
+              ✉️ <a href={"mailto:" + emailAddress} style={{ color: 'inherit', textDecoration: 'none' }}>{emailAddress}</a>
+            </p>
+            <p style={{ fontSize: '1.1rem', margin: '10px 0', color: 'rgba(255,255,255,0.85)' }}>
+              💬 <a href={"https://wa.me/" + phoneNumber} target="_blank" rel="noreferrer" style={{ color: 'inherit', textDecoration: 'none' }}>WhatsApp Us</a>
+            </p>
           </div>
           <div>
-            <h3 style={{ color: '#8bc34a', fontSize: '2.2rem', marginBottom: '20px' }}>Our Location</h3>
-            <p style={{ fontSize: '1.4rem', margin: '5px 0' }}>Upper Rohru Bazar, Rohru</p>
-            <p style={{ fontSize: '1.4rem', margin: '5px 0' }}>Distt. Shimla, Himachal Pradesh</p>
+            <h3 style={{ color: '#7ecb8f', fontSize: '1.2rem', marginBottom: '16px', letterSpacing: '1px', textTransform: 'uppercase' }}>Registered Office</h3>
+            <p style={{ fontSize: '1.1rem', margin: '6px 0', color: 'rgba(255,255,255,0.85)', lineHeight: '1.8' }}>
+              Plot No. 734, Sector 82,<br />
+              JLPL Industrial Area,<br />
+              Near Chandigarh International Airport,<br />
+              Mohali – 160 055, Punjab, India
+            </p>
           </div>
+          <div>
+            <h3 style={{ color: '#7ecb8f', fontSize: '1.2rem', marginBottom: '16px', letterSpacing: '1px', textTransform: 'uppercase' }}>Operations</h3>
+            <p style={{ fontSize: '1.1rem', margin: '6px 0', color: 'rgba(255,255,255,0.85)', lineHeight: '1.8' }}>
+              Rohru, District Shimla,<br />
+              Himachal Pradesh, India<br /><br />
+              <span style={{ color: 'rgba(255,255,255,0.5)', fontSize: '0.9rem' }}>
+                PEQ Site: Village Gawna,<br />Tehsil Rohru, Distt. Shimla
+              </span>
+            </p>
+          </div>
+        </div>
+        <div style={{
+          textAlign: 'center', marginTop: '60px',
+          paddingTop: '30px', borderTop: '1px solid rgba(255,255,255,0.1)',
+          color: 'rgba(255,255,255,0.35)', fontSize: '0.85rem'
+        }}>
+          © {new Date().getFullYear()} AppleWay Imports Pvt. Ltd. All rights reserved.
         </div>
       </footer>
     </div>
