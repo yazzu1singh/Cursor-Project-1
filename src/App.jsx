@@ -2,7 +2,7 @@ import React from 'react';
 
 function App() {
   const phoneNumber = "919218598160";
-  const emailAddress = "info@applewayimports.com";
+  const emailAddress = "info@applewayimports.co.in";
 
   const team = [
     { name: "Chetan Sood", role: "Director — Logistics & India Operations", img: "/chetan-new.jpg" },
@@ -136,9 +136,9 @@ function App() {
         }}>
           {[
             { stat: '5,500–7,500 ft', label: 'Planting Altitude' },
-            { stat: 'Italy', label: 'Source Country' },
-            { stat: 'PEQ Certified', label: 'Quarantine Compliant' },
-            { stat: 'HP & PAN India', label: 'Distribution' }
+            { stat: 'European Union', label: 'Source Region' },
+            { stat: 'In Progress', label: 'Import License' },
+            { stat: 'Himachal Pradesh', label: 'Target Market' }
           ].map((item, i) => (
             <div key={i} style={{
               backgroundColor: '#fff', padding: '28px 20px', borderRadius: '12px',
@@ -152,14 +152,39 @@ function App() {
         </div>
 
         <div style={{ maxWidth: '900px', margin: '0 auto' }}>
+
+          {/* MISSION STATEMENT */}
+          <div style={{
+            backgroundColor: '#1a4d2e', borderRadius: '16px',
+            padding: '44px', marginBottom: '50px',
+            boxShadow: '0 8px 30px rgba(26,77,46,0.15)'
+          }}>
+            <div style={{ fontSize: '0.75rem', color: '#7ecb8f', fontWeight: '700', letterSpacing: '3px', textTransform: 'uppercase', marginBottom: '16px' }}>
+              Our Mission
+            </div>
+            <p style={{ lineHeight: '1.9', fontSize: '1.2rem', color: '#fff', marginBottom: '20px' }}>
+              At AppleWay Imports, we believe that every orchardist in the Himalayas deserves access to the finest apple genetics in the world — not just the privileged few. Our mission is to bring certified, high-quality European apple planting material to Indian growers at <strong style={{ color: '#7ecb8f' }}>competitive and fair prices</strong>, empowering the common orchardist to build productive, profitable orchards and boost their local economy.
+            </p>
+            <p style={{ lineHeight: '1.9', fontSize: '1.2rem', color: '#fff', marginBottom: '20px' }}>
+              We are equally committed to the environment. Every variety we import is selected not only for yield and colour, but for its compatibility with <strong style={{ color: '#7ecb8f' }}>sustainable, low-input horticultural practices</strong> suited to the fragile Himalayan ecosystem — including high-density planting systems, virus-free certified material, and reduced pesticide requirements. We believe that growing better apples and protecting our mountains are not competing goals — they go hand in hand.
+            </p>
+            <p style={{ lineHeight: '1.9', fontSize: '1.2rem', color: 'rgba(255,255,255,0.75)', margin: 0 }}>
+              AppleWay Imports is being built from the ground up with full regulatory compliance, transparency, and a long-term vision — because the orchardists of Himachal Pradesh deserve nothing less.
+            </p>
+          </div>
+
+          {/* WHO WE ARE */}
           <p style={{ lineHeight: '1.9', fontSize: '1.25rem', color: '#333', marginBottom: '24px', textAlign: 'justify' }}>
-            <strong>AppleWay Imports Pvt. Ltd.</strong> is a premier horticultural import and nursery company headquartered in <strong>Mohali, Punjab</strong>, with deep operational roots in the apple-growing heartland of <strong>Rohru, District Shimla, Himachal Pradesh</strong>. We are dedicated to revolutionising apple farming in India by providing access to world-class, virus-free, certified plant material from leading European nurseries.
+            <strong>AppleWay Imports Pvt. Ltd.</strong> is a dynamic young startup rooted in the apple-growing heartland of the <strong>Shimla region, Himachal Pradesh</strong>, with its headquarters in <strong>Mohali, Punjab</strong>. We are dedicated to revolutionising apple farming in India by providing access to world-class, virus-free, certified plant material sourced from leading nurseries across the <strong>European Union</strong>.
           </p>
           <p style={{ lineHeight: '1.9', fontSize: '1.25rem', color: '#333', marginBottom: '24px', textAlign: 'justify' }}>
-            Our expertise lies in identifying and importing elite apple genetics — including the latest dark Gala clones and high-performance rootstocks — that are specifically suited to the diverse micro-climates of the Himalayan region at altitudes between 5,500 and 7,500 feet above sea level. All imported material is handled through a fully compliant <strong>Post Entry Quarantine (PEQ)</strong> process under the supervision of the Government of India (PPQS) and the Designated Inspection Authority.
+            Behind AppleWay is a dedicated team of <strong>local orchardists with generations of Himalayan farming knowledge</strong>, qualified horticultural experts, international business advisors, and investors — backed by over <strong>30 years of combined global import and export experience</strong>. This unique combination of local expertise and international reach is what sets AppleWay apart.
+          </p>
+          <p style={{ lineHeight: '1.9', fontSize: '1.25rem', color: '#333', marginBottom: '24px', textAlign: 'justify' }}>
+            Our focus is on importing elite apple genetics — including the latest dark Gala clones and high-performance rootstocks — that are specifically suited to the diverse micro-climates of the Himalayan region at altitudes between <strong>5,500 and 7,500 feet above sea level</strong>. We champion high-density planting systems, virus-free certified varieties, and sustainable practices that reduce pesticide dependency and protect the fragile mountain environment.
           </p>
           <p style={{ lineHeight: '1.9', fontSize: '1.25rem', color: '#333', textAlign: 'justify' }}>
-            Following successful PEQ clearance, certified mother plants are propagated through our licensed nursery and made available to commercial apple growers and orchardists across Himachal Pradesh — bringing the best of European apple science to Indian soil.
+            AppleWay is currently in the process of obtaining all necessary regulatory approvals from the Government of India, including our <strong>Plant Quarantine Import Permit</strong> from the Directorate of Plant Protection, Quarantine & Storage (PPQS) and our <strong>fruit plant nursery registration</strong> under the Himachal Pradesh Fruit Plant Nurseries Registration and Regulation Act, 2015. Our Post Entry Quarantine (PEQ) site in Rohru, District Shimla is being established in full compliance with all applicable Indian plant quarantine regulations. We are committed to doing this right — transparently, legally, and with the long-term benefit of Indian orchardists at heart.
           </p>
         </div>
 
@@ -267,6 +292,9 @@ function App() {
             </p>
             <p style={{ fontSize: '1.1rem', margin: '10px 0', color: 'rgba(255,255,255,0.85)' }}>
               ✉️ <a href={"mailto:" + emailAddress} style={{ color: 'inherit', textDecoration: 'none' }}>{emailAddress}</a>
+            </p>
+            <p style={{ fontSize: '1.1rem', margin: '10px 0', color: 'rgba(255,255,255,0.85)' }}>
+              🌐 <a href="https://www.applewayimports.co.in" target="_blank" rel="noreferrer" style={{ color: 'inherit', textDecoration: 'none' }}>www.applewayimports.co.in</a>
             </p>
             <p style={{ fontSize: '1.1rem', margin: '10px 0', color: 'rgba(255,255,255,0.85)' }}>
               💬 <a href={"https://wa.me/" + phoneNumber} target="_blank" rel="noreferrer" style={{ color: 'inherit', textDecoration: 'none' }}>WhatsApp Us</a>
