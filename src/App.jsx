@@ -13,9 +13,9 @@ function App() {
 
   const galleryImages = [
     { url: "https://images.unsplash.com/photo-1567306226416-28f0efdc88ce?w=800", alt: "Apple Orchard" },
-    { url: "https://images.unsplash.com/photo-1619546813926-a78fa6372cd2?w=800", alt: "Red Apples" },
-    { url: "https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5?w=800", alt: "Apple Harvest" },
-    { url: "https://images.unsplash.com/photo-1568702846914-96b305d2aaeb?w=800", alt: "Fresh Apples" }
+    { url: "https://images.unsplash.com/photo-1619546813926-a78fa6372cd2?w=800", alt: "Red Gala Apples" },
+    { url: "https://images.unsplash.com/photo-1498557850523-fd3d118b962e?w=800", alt: "Blueberries" },
+    { url: "https://images.unsplash.com/photo-1560806887-1e4cd0b6cbd6?w=800", alt: "Apple Harvest" }
   ];
 
   const products = [
