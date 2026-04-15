@@ -315,7 +315,7 @@ function App() {
           <div>
             <h3 style={{ color: '#7ecb8f', fontSize: '1.2rem', marginBottom: '16px', letterSpacing: '1px', textTransform: 'uppercase' }}>Operations</h3>
             <p style={{ fontSize: '1.1rem', margin: '6px 0', color: 'rgba(255,255,255,0.85)', lineHeight: '1.8' }}>
-              Rohru, District Shimla,<br />
+              District Shimla,<br />
               Himachal Pradesh, India
             </p>
           </div>
