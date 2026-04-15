@@ -63,7 +63,7 @@ function App() {
         boxShadow: '0 2px 12px rgba(0,0,0,0.07)'
       }}>
         <div style={{ display: 'flex', alignItems: 'center', gap: '14px' }}>
-          <img src="/logo.png" alt="AppleWay Imports Logo" style={{ height: '60px', width: 'auto' }} />
+          <img src="/Stylized_apple_logo_with_tree.png" alt="AppleWay Imports Logo" style={{ height: '60px', width: 'auto' }} />
           <div style={{ display: 'flex', flexDirection: 'column' }}>
             <span style={{ fontWeight: '900', color: '#1a4d2e', fontSize: '1.5rem', letterSpacing: '2px', textTransform: 'uppercase' }}>
               AppleWay Imports
