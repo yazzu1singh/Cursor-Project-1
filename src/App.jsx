@@ -12,10 +12,10 @@ function App() {
   ];
 
   const galleryImages = [
-    { url: "https://images.unsplash.com/photo-1567306226416-28f0efdc88ce?w=800", alt: "Orchard" },
-    { url: "https://images.unsplash.com/photo-1594755335927-975000459db9?w=800", alt: "Apples" },
-    { url: "https://images.unsplash.com/photo-1500651230702-0e2d8a49d4ad?w=800", alt: "Harvest" },
-    { url: "https://images.unsplash.com/photo-1615485290382-441e4d019cb0?w=800", alt: "Packing" }
+    { url: "https://images.unsplash.com/photo-1570913149827-d2ac84ab3f9a?w=800", alt: "Apple Orchard" },
+    { url: "https://images.unsplash.com/photo-1504382262782-5b4ece78642b?w=800", alt: "Red Apples" },
+    { url: "https://images.unsplash.com/photo-1601039641847-7857b994d704?w=800", alt: "Apple Harvest" },
+    { url: "https://images.unsplash.com/photo-1568702846914-96b305d2aaeb?w=800", alt: "Fresh Apples" }
   ];
 
   const products = [
