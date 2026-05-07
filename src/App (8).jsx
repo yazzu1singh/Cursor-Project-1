@@ -1,7 +1,7 @@
 import React from 'react';
 
 function App() {
-  const phoneNumber = "919218598160";
+  const phoneNumber = "919882111111";
   const emailAddress = "info@applewayimports.co.in";
 
   const team = [
@@ -291,7 +291,7 @@ function App() {
               📞 <a href="tel:+358403772832" style={{ color: 'inherit', textDecoration: 'none' }}>+358-403 772 832 (Finland)</a>
             </p>
             <p style={{ fontSize: '1.1rem', margin: '10px 0', color: 'rgba(255,255,255,0.85)' }}>
-              📞 <a href="tel:+919218598160" style={{ color: 'inherit', textDecoration: 'none' }}>+91-92185 98160 (India)</a>
+              📞 <a href="tel:+919882111111" style={{ color: 'inherit', textDecoration: 'none' }}>+91-98821 11111 (India)</a>
             </p>
             <p style={{ fontSize: '1.1rem', margin: '10px 0', color: 'rgba(255,255,255,0.85)' }}>
               ✉️ <a href={"mailto:" + emailAddress} style={{ color: 'inherit', textDecoration: 'none' }}>{emailAddress}</a>
@@ -304,7 +304,7 @@ function App() {
             </p>
           </div>
           <div>
-            <h3 style={{ color: '#7ecb8f', fontSize: '1.2rem', marginBottom: '16px', letterSpacing: '1px', textTransform: 'uppercase' }}>Registered Office</h3>
+            <h3 style={{ color: '#7ecb8f', fontSize: '1.2rem', marginBottom: '16px', letterSpacing: '1px', textTransform: 'uppercase' }}>Head Office</h3>
             <p style={{ fontSize: '1.1rem', margin: '6px 0', color: 'rgba(255,255,255,0.85)', lineHeight: '1.8' }}>
               Plot No. 734, Sector 82,<br />
               JLPL Industrial Area,<br />
@@ -313,9 +313,11 @@ function App() {
             </p>
           </div>
           <div>
-            <h3 style={{ color: '#7ecb8f', fontSize: '1.2rem', marginBottom: '16px', letterSpacing: '1px', textTransform: 'uppercase' }}>Operations</h3>
+            <h3 style={{ color: '#7ecb8f', fontSize: '1.2rem', marginBottom: '16px', letterSpacing: '1px', textTransform: 'uppercase' }}>Registered Office (Regional)</h3>
             <p style={{ fontSize: '1.1rem', margin: '6px 0', color: 'rgba(255,255,255,0.85)', lineHeight: '1.8' }}>
-              District Shimla,<br />
+              Top Floor, Sood Towers,<br />
+              Near Housing Board Colony, Samala,<br />
+              Rohru, Shimla – 171 207,<br />
               Himachal Pradesh, India
             </p>
           </div>
